@@ -37,7 +37,7 @@
     <meta name="msapplication-TileImage" content="assets/touch/ms-touch-icon-144x144-precomposed.png">
     <meta name="msapplication-TileColor" content="#3372DF">
 
-    <link rel="shortcut icon" href="images/favicon.png">
+    <link rel="shortcut icon" href="../assets/favicon/favicon-32x32.png">
 
     <!-- SEO: If your mobile URL is different from the desktop URL, add a canonical link to the desktop page https://developers.google.com/webmasters/smartphone-sites/feature-phones -->
     <!--
@@ -117,9 +117,9 @@ foreach ($json as $item) {
         <footer class="demo-footer mdl-mini-footer">
           <div class="mdl-mini-footer--left-section">
             <ul class="mdl-mini-footer--link-list">
-              <li><a href="#">Help</a></li>
-              <li><a href="#">Privacy and Terms</a></li>
-              <li><a href="#">User Agreement</a></li>
+              <li><a href="https://jira.carbonrom.org">Help</a></li>
+              <li><a href="https://legal.carbonrom.org/privacy">Privacy and Terms</a></li>
+              <li><a href="https://legal.carbonrom.org/agreements">User Agreement</a></li>
             </ul>
           </div>
         </footer>
