@@ -95,7 +95,7 @@ $date = 0;
 
 // Info for users
 echo "<h3>CarbonROM Changelog</h3>";
-echo "<h5>*Changes do not indicate successful nightly compilation*</h5>";
+echo "<h5>*Changes do not indicate successful weekly compilation*</h5>";
 
 foreach ($json as $item) {
     // Get date of change from JSON
