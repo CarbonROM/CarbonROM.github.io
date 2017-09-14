@@ -5,7 +5,7 @@
 <body>
 <?php
 // Get JSON Data
-$jsonraw = file_get_contents("https://review.carbonrom.org/changes/?q=status:merged");
+$jsonraw = file_get_contents("https://review.carbonrom.org/changes/?q=status:merged+branch:cr-6.1");
 $json = json_decode(preg_replace('/^.+\n/', '', $jsonraw));
 
 // Set date
