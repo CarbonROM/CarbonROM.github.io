@@ -108,7 +108,9 @@ foreach ($json as $item) {
     }
 
     // Show the change
-    echo '<p>' . substr($item->project,10) . ': <a href="https://review.carbonrom.org/#/c/' . $item->_number . '">' . $item->subject . '</a>';
+    echo '<p>' . substr($item->project,10) . ': <a href="https://review.carbonrom.org/?polygerrit=1/#/c/' . $item->_number . 
+'">' . 
+$item->subject . '</a>';
 }
 ?>
 
@@ -125,7 +127,7 @@ foreach ($json as $item) {
         </footer>
       </main>
     </div>
-    <a href="https://review.carbonrom.org" target="_blank" id="view-source" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-color--accent mdl-color-text--accent-contrast">Visit Gerrit</a>
+    <a href="https://review.carbonrom.org/?polygerrit=1" target="_blank" id="view-source" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-color--accent mdl-color-text--accent-contrast">Visit Gerrit</a>
     <script src="https://code.getmdl.io/1.2.1/material.min.js"></script>
   </body>
 </html>
