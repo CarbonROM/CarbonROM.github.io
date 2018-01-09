@@ -9,6 +9,32 @@
         <link rel="stylesheet" href="assets/css/main.css" />
     </head>
     <body>
+<link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css" />
+<script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
+<script>
+window.addEventListener("load", function(){
+window.cookieconsent.initialise({
+  "palette": {
+    "popup": {
+      "background": "#efefef",
+      "text": "#404040"
+    },
+    "button": {
+      "background": "#8ec760",
+      "text": "#ffffff"
+    }
+  },
+  "theme": "edgeless",
+  "position": "top",
+  "static": true,
+  "content": {
+    "message": "Just as a heads-up, as we're upgrading our servers, you may encounter issues accessing our site and services.",
+    "dismiss": "Got it.",
+    "link": "Check System Status",
+    "href": "https://status.carbonrom.org"
+  }
+})});
+</script>
 
         <!-- Wrapper -->
             <div id="wrapper" class="divided">
