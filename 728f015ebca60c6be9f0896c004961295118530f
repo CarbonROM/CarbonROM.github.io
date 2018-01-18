@@ -45,6 +45,29 @@
       "revId": "728f015ebca60c6be9f0896c004961295118530f",
       "serverId": "4c0b52a2-b090-4331-a190-b288d812d081",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "8828b303_83340aa8",
+        "filename": "index.html",
+        "patchSetId": 1
+      },
+      "lineNbr": 109,
+      "author": {
+        "id": 8
+      },
+      "writtenOn": "2018-01-18T13:10:10Z",
+      "side": 1,
+      "message": "Dont think we should be advertising this way, we dont want to be perceived like every other \"feature packed\" rom, since we focus on minimalism to an extent",
+      "range": {
+        "startLine": 109,
+        "startChar": 65,
+        "endLine": 109,
+        "endChar": 101
+      },
+      "revId": "728f015ebca60c6be9f0896c004961295118530f",
+      "serverId": "4c0b52a2-b090-4331-a190-b288d812d081",
+      "unresolved": false
     }
   ]
 }
