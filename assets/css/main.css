@@ -1,5 +1,5 @@
 @import url(font-awesome.min.css);
-@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,400,400i");
+@import url("https://fonts.googleapis.com/css?family=Nunito:300,300i,400,400i,600,600i");
 
 /*
 	Story by HTML5 UP
@@ -1640,13 +1640,13 @@
 /* Type */
 
 	html {
-		font-size: 18pt;
+		font-size: 1.5em;
 	}
 
 		@media screen and (max-width: 1680px) {
 
 			html {
-				font-size: 14pt;
+				font-size: 1.15em;
 			}
 
 		}
@@ -1654,7 +1654,7 @@
 		@media screen and (max-width: 1280px) {
 
 			html {
-				font-size: 12pt;
+				font-size: 1em;
 			}
 
 		}
@@ -1662,7 +1662,7 @@
 		@media screen and (max-width: 736px) {
 
 			html {
-				font-size: 11pt;
+				font-size: 1em;
 			}
 
 		}
@@ -1670,7 +1670,7 @@
 		@media screen and (max-width: 360px) {
 
 			html {
-				font-size: 10pt;
+				font-size: 1em;
 			}
 
 		}
@@ -1681,10 +1681,10 @@
 	}
 
 	body, input, select, textarea {
-		font-family: "Source Sans Pro", Helvetica, sans-serif;
-		font-size: 1rem;
+		font-family: 'Nunito', sans-serif;
+		font-size: 1em;
 		font-weight: 300;
-		line-height: 1.65;
+		line-height: 1.3;
 	}
 
 	a {
@@ -1700,7 +1700,7 @@
 		}
 
 	strong, b {
-		font-weight: 400;
+		font-weight: 600;
 	}
 
 	em, i {
@@ -1708,6 +1708,7 @@
 	}
 
 	p {
+		letter-spacing: 0em;
 		margin: 0 0 2rem 0;
 	}
 
@@ -1718,7 +1719,6 @@
 	h1, h2, h3, h4, h5, h6 {
 		font-weight: 300;
 		line-height: 1.375;
-		letter-spacing: -0.05em;
 		margin: 0 0 1rem 0;
 	}
 
@@ -1773,7 +1773,7 @@
 
 	code {
 		border-radius: 4px;
-		font-family: "Courier New", monospace;
+		font-family: 'Nunito', sans-serif;
 		font-size: 0.9em;
 		margin: 0 0.25rem;
 		padding: 0.25rem 0.325rem;
@@ -1781,7 +1781,7 @@
 
 	pre {
 		-webkit-overflow-scrolling: touch;
-		font-family: "Courier New", monospace;
+		font-family: 'Nunito', sans-serif;
 		font-size: 0.9em;
 		margin: 0 0 2rem 0;
 	}
@@ -1916,7 +1916,7 @@
 		border: 0;
 		cursor: pointer;
 		display: inline-block;
-		font-weight: 400;
+		font-weight: 300;
 		letter-spacing: 0.125em;
 		text-align: center;
 		text-decoration: none;
@@ -1956,10 +1956,10 @@
 		button.small,
 		.button.small {
 			font-size: 0.6rem;
-			height: 3.325em;
-			line-height: 3.325em;
-			border-radius: 3.325em;
-			padding: 0 2em;
+			height: 3em;
+			line-height: 3em;
+			border-radius: 3em;
+			padding: 0 1em;
 		}
 
 		input[type="submit"].big,
