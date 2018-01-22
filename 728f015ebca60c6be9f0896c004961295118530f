@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "51390d30_2108717a",
+        "filename": "index.html",
+        "patchSetId": 1
+      },
+      "lineNbr": 96,
+      "author": {
+        "id": 13
+      },
+      "writtenOn": "2018-01-22T18:33:58Z",
+      "side": 1,
+      "message": "I\u0027ll come up with something better for this.",
+      "parentUuid": "1dd48067_939c02c4",
+      "range": {
+        "startLine": 96,
+        "startChar": 126,
+        "endLine": 96,
+        "endChar": 173
+      },
+      "revId": "728f015ebca60c6be9f0896c004961295118530f",
+      "serverId": "4c0b52a2-b090-4331-a190-b288d812d081",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "8229cbc8_8de790ad",
         "filename": "index.html",
         "patchSetId": 1
@@ -105,6 +129,54 @@
       "writtenOn": "2018-01-18T20:44:43Z",
       "side": 1,
       "message": "has to be the, a sounds weird",
+      "range": {
+        "startLine": 109,
+        "startChar": 251,
+        "endLine": 109,
+        "endChar": 252
+      },
+      "revId": "728f015ebca60c6be9f0896c004961295118530f",
+      "serverId": "4c0b52a2-b090-4331-a190-b288d812d081",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "879b1ea9_742c5cf4",
+        "filename": "index.html",
+        "patchSetId": 1
+      },
+      "lineNbr": 109,
+      "author": {
+        "id": 13
+      },
+      "writtenOn": "2018-01-22T18:33:58Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "ac47c6bd_9ba19806",
+      "range": {
+        "startLine": 109,
+        "startChar": 216,
+        "endLine": 109,
+        "endChar": 217
+      },
+      "revId": "728f015ebca60c6be9f0896c004961295118530f",
+      "serverId": "4c0b52a2-b090-4331-a190-b288d812d081",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "acca94ea_21bbfb97",
+        "filename": "index.html",
+        "patchSetId": 1
+      },
+      "lineNbr": 109,
+      "author": {
+        "id": 13
+      },
+      "writtenOn": "2018-01-22T18:33:58Z",
+      "side": 1,
+      "message": "No, this is proper",
+      "parentUuid": "8229cbc8_8de790ad",
       "range": {
         "startLine": 109,
         "startChar": 251,
