@@ -44,7 +44,7 @@
     <link rel="canonical" href="http://www.example.com/">
     -->
 
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://code.getmdl.io/1.2.1/material.teal-red.min.css">
     <link rel="stylesheet" href="css/styles.css">
@@ -65,16 +65,6 @@
       <header class="demo-header mdl-layout__header mdl-layout__header--scroll mdl-color--grey-100 mdl-color-text--grey-800">
         <div class="mdl-layout__header-row">
           <span class="mdl-layout-title">CarbonROM</span>
-          <div class="mdl-layout-spacer"></div>
-          <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable">
-            <label class="mdl-button mdl-js-button mdl-button--icon" for="search">
-              <i class="material-icons">search</i>
-            </label>
-            <div class="mdl-textfield__expandable-holder">
-              <input class="mdl-textfield__input" type="text" id="search">
-              <label class="mdl-textfield__label" for="search">Enter your query...</label>
-            </div>
-          </div>
         </div>
       </header>
       <div class="demo-ribbon"></div>
@@ -108,7 +98,7 @@ foreach ($json as $item) {
     }
 
     // Show the change
-    echo '<p>' . substr($item->project,10) . ': <a href="https://review.carbonrom.org/?polygerrit=1/#/c/' . $item->_number . 
+    echo '<p>' . substr($item->project,10) . ': <a href="https://review.carbonrom.org/#/c/' . $item->_number . 
 '">' . 
 $item->subject . '</a>';
 }
@@ -127,7 +117,7 @@ $item->subject . '</a>';
         </footer>
       </main>
     </div>
-    <a href="https://review.carbonrom.org/?polygerrit=1" target="_blank" id="view-source" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-color--accent mdl-color-text--accent-contrast">Visit Gerrit</a>
+    <a href="https://review.carbonrom.org/" target="_blank" id="view-source" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-color--accent mdl-color-text--accent-contrast">Visit Gerrit</a>
     <script src="https://code.getmdl.io/1.2.1/material.min.js"></script>
   </body>
 </html>
