@@ -71,8 +71,19 @@
               CarbonROM &gt; Daily Changelog
             </div>
   <?php
+// Set default branch
+$branch = "cr-7.0";
+$opposite_branch = "cr-6.1";
+
+if (isset($_COOKIE['cr_changelog_branch'])) {
+    $branch = $_COOKIE["cr_changelog_branch"];
+    if ($branch == "cr-6.1") {
+        $opposite_branch = "cr-7.0";
+    }
+}
+
 // Get JSON Data
-$jsonraw = file_get_contents("https://review.carbonrom.org/changes/?q=status:merged+branch:cr-7.0");
+$jsonraw = file_get_contents("https://review.carbonrom.org/changes/?q=status:merged+branch:" + $branch);
 $json = json_decode(preg_replace('/^.+\n/', '', $jsonraw));
 
 // Set date
@@ -112,6 +123,7 @@ $item->subject . '</a>';
         </footer>
       </main>
     </div>
+    <a href="<?php setcookie("cr_changelog_branch", $opposite_branch); header("Refresh:0"); ?>" target="_blank" id="view-source" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-color--accent mdl-color-text--accent-contrast">Show <?php echo $opposite_branch ?> Changelog</a>
     <a href="https://review.carbonrom.org/" target="_blank" id="view-source" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-color--accent mdl-color-text--accent-contrast">Visit Gerrit</a>
     <script src="https://code.getmdl.io/1.2.1/material.min.js"></script>
   </body>
