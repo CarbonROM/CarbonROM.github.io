@@ -71,8 +71,20 @@
               CarbonROM &gt; Daily Changelog
             </div>
   <?php
+
+// Set default branch
+$branch = "cr-7.0";
+$opposite_branch = "cr-6.1";
+
+if (isset($_GET['branch'])) {
+    $branch = $_GET["branch"];
+    if ($branch == "cr-6.1") {
+        $opposite_branch = "cr-7.0";
+    }
+}
+
 // Get JSON Data
-$jsonraw = file_get_contents("https://review.carbonrom.org/changes/?q=status:merged+branch:cr-7.0");
+$jsonraw = file_get_contents("https://review.carbonrom.org/changes/?q=status:merged+branch:" . $branch);
 $json = json_decode(preg_replace('/^.+\n/', '', $jsonraw));
 
 // Set date
@@ -93,9 +105,7 @@ foreach ($json as $item) {
     }
 
     // Show the change
-    echo '<p>' . substr($item->project,10) . ': <a href="https://review.carbonrom.org/#/c/' . $item->_number . 
-'">' . 
-$item->subject . '</a>';
+    echo '<p>' . substr($item->project,10) . ': <a href="https://review.carbonrom.org/#/c/' . $item->_number . '">' . $item->subject . '</a>';
 }
 ?>
 
@@ -112,7 +122,7 @@ $item->subject . '</a>';
         </footer>
       </main>
     </div>
-    <a href="https://review.carbonrom.org/" target="_blank" id="view-source" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-color--accent mdl-color-text--accent-contrast">Visit Gerrit</a>
+    <a href="?branch=<?php echo $opposite_branch ?>" target="_self" id="view-source" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-color--accent mdl-color-text--accent-contrast">Show <?php echo $opposite_branch ?> Changelog</a>
     <script src="https://code.getmdl.io/1.2.1/material.min.js"></script>
   </body>
 </html>
