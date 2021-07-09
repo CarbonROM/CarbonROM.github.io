@@ -94,7 +94,7 @@ $json = json_decode(preg_replace('/^.+\n/', '', $jsonraw));
 $date = 0;
 
 // Info for users
-echo "<h3>CarbonROM Changelog</h3>";
+echo "<h3>CarbonROM Changelog for $branch</h3>";
 echo "<h5>*Changes do not indicate successful weekly compilation*</h5>";
 
 foreach ($json as $item) {
