@@ -73,16 +73,16 @@
   <?php
 
 // Set default branch
-$branch = "cr-8.0";
-$opposite_branch = "cr-7.0";
+$branch = "cr-9.0";
+$opposite_branch = "cr-8.0";
 
 if (isset($_GET['branch'])) {
     $branch = $_GET["branch"];
-    if ($branch == "cr-7.0") {
-        $opposite_branch = "cr-6.1";
+    if ($branch == "cr-8.0") {
+        $opposite_branch = "cr-7.0";
     }
-    if ($branch == "cr-6.1") {
-        $opposite_branch = "cr-8.0";
+    if ($branch == "cr-7.0") {
+        $opposite_branch = "cr-9.0";
     }
 }
 
