@@ -118,8 +118,8 @@ foreach ($json as $item) {
           <div class="mdl-mini-footer--left-section">
             <ul class="mdl-mini-footer--link-list">
               <li><a href="mailto:support@carbonrom.org">Help</a></li>
-              <li><a href="https://legal.carbonrom.org/privacy">Privacy and Terms</a></li>
-              <li><a href="https://legal.carbonrom.org/agreements">User Agreement</a></li>
+              <li><a href="https://carbonrom.org/legal/privacy.html">Privacy and Terms</a></li>
+              <li><a href="https://carbonrom.org/legal/ua.html">User Agreement</a></li>
             </ul>
           </div>
         </footer>
